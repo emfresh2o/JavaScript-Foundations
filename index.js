@@ -103,11 +103,8 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 
 function variableInterestRate (principal, interestRate, years) {
     for (let i = 0; i < 10; i++) {
-    const numerator2 = (interestRate/12) * (Math.pow((1 + (interestRate/12)), (years*12)));
-    const denominator2 = (Math.pow((1 + (interestRate/12)), (years*12)))-1; 
-    let monthlyRate = (principal * (numerator2/denominator2)).toFixed(2);
-  
-    let varIR = ((name) + (", with an Interest Rate of ") + (interestRate.toFixed(3)) + (", your monthly rate is $") + (monthlyRate));
+   let monthlyRate = (principal * (numerator2/denominator2)).toFixed(2);
+   let varIR = ((name) + (", with an Interest Rate of ") + (interestRate.toFixed(3)) + (", your monthly rate is $") + (monthlyRate));
   
     console.log (varIR); 
     interestRate = (interestRate + .005)

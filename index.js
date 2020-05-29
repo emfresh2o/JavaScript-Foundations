@@ -81,9 +81,9 @@ function mortgageCalculator (principal, interestRate, years, creditScore) {
     else (creditScore < 740 && creditScore > 660)
       I = interestRate;
 }
-
     mortgageCalculator(200000, 0.05, 30, 700)
-
+    
+console.log (mortgageCalculator)
 
 // 🏡 Task 6: Loops
 /* Write a new function called variableInterestRate. This function should be the same as mortgageCalculator, except it should console.log the monthly payment for 10 different interest rates at 0.5% increments plus or minus 2% from the inputted interest rate. Complete these calculations using a for loop.

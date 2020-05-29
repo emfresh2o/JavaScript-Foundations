@@ -82,7 +82,7 @@ function mortgageCalculator (principal, interestRate, years, creditScore) {
       I = interestRate;
 }
 
-    console.log (mortgageCalculator(200000, 0.05, 30, 700))
+    mortgageCalculator(200000, 0.05, 30, 700)
 
 
 // 🏡 Task 6: Loops

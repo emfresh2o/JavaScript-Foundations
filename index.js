@@ -61,8 +61,8 @@ For example,
 mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
 
-function mortgageCalculator(P, I N){
-    console.log (P * (I * Math.pow((1+I,N)) / (Math.pow((1+I), N) -1));
+function mortgageCalculator(P, I, N){
+    console.log (P * (I * Math.pow((1+I,N)) / (Math.pow((1+I), N) -1)));
 }
 mortgageCalculator(principal, monthlyInterestRate, periods);
 
@@ -78,11 +78,11 @@ function mortgageCalculator (principal, interestRate, years, creditScore) {
     if (creditScore > 740)
       {I = interestRate - 0.005}
     else if (creditScore < 660) {I = interestRate + 0.005}
-    else (creditScore < 740 && creditScore > 660){
-      I = interestRate
+    else (creditScore < 740 && creditScore > 660)
+      I = interestRate;
     }
      
-}
+
     console.log (mortgageCalculator(principal, interestRate, years, creditScore))
 
 // 🏡 Task 6: Loops
